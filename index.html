@@ -16,11 +16,11 @@
     --gold: #ffcd00;
     --hairline: rgba(245, 241, 232, 0.14);
 
-    --recognizer: #ffcd00;
-    --listener: #7de69b;
-    --developer: #1d495e;
+    --champion: #ffcd00;
+    --trust_builder: #7de69b;
+    --coach: #1d495e;
     --connector: #56595B;
-    --communicator: #59bec9;
+    --purpose_builder: #59bec9;
     --pathfinder: #1d4d52;
   }
 
@@ -313,24 +313,24 @@
 
 <script>
   const TRAITS = {
-    Recognizer: {
-      color: 'var(--recognizer)',
+    Champion: {
+      color: 'var(--champion)',
       desc: "Sees the strengths, contributions, and potential in others, helping people feel valued and empowered to do their best work."
     },
-    Listener: {
-      color: 'var(--listener)',
+    Trust_Builder: {
+      color: 'var(--trust_builder)',
       desc: "Creates trust through genuine curiosity and understanding, ensuring every voice is heard and every perspective matters."
     },
-    Developer: {
-      color: 'var(--developer)',
+    Coach: {
+      color: 'var(--coach)',
       desc: "Invests in the growth of others, helping people build skills, overcome challenges, and reach their full potential."
     },
     Connector: {
       color: 'var(--connector)',
       desc: "Brings people, ideas, and resources together, creating opportunities and partnerships that make greater success possible."
     },
-    Communicator: {
-      color: 'var(--communicator)',
+    Purpose_Builder: {
+      color: 'var(--purpose_builder)',
       desc: "Transforms ideas into messages that inspire action, build understanding, and unite people around a common purpose."
     },
     Pathfinder: {
@@ -343,10 +343,10 @@
     {
       text: "A team member nails a presentation for the first time. What's your next move?",
       options: [
-        { t: "Talk with them about what stretch project could come next.", trait: "Developer" },
-        { t: "Tell them specifically what made it land, right after they are done.", trait: "Recognizer" },
-        { t: "Share the takeaways from their approach with the rest of the team.", trait: "Communicator" },
-        { t: "Ask them how it felt and what they'd want to try differently.", trait: "Listener" },
+        { t: "Talk with them about what stretch project could come next.", trait: "Coach" },
+        { t: "Tell them specifically what made it land, right after they are done.", trait: "Champion" },
+        { t: "Share the takeaways from their approach with the rest of the team.", trait: "Purpose_Builder" },
+        { t: "Ask them how it felt and what they'd want to try differently.", trait: "Trust_Builder" },
         { t: "Introduce them to someone else who could mentor them further.", trait: "Connector" },
         { t: "Paint a picture of where a skill like this could take them down the road.", trait: "Pathfinder" }
       ]
@@ -354,21 +354,21 @@
     {
       text: "Two people on your team disagree loudly in a meeting. What's your first instinct?",
       options: [
-        { t: "Let both finish, then reflect back what you heard from each side.", trait: "Listener" },
+        { t: "Let both finish, then reflect back what you heard from each side.", trait: "Trust_Builder" },
         { t: "Find the common ground between what they each actually want.", trait: "Connector" },
-        { t: "Point out what's valid in both positions before moving on.", trait: "Recognizer" },
-        { t: "Turn it into a moment about disagreeing productively.", trait: "Developer" },
-        { t: "Restate the shared goal so the disagreement has context.", trait: "Communicator" },
+        { t: "Point out what's valid in both positions before moving on.", trait: "Champion" },
+        { t: "Turn it into a moment about disagreeing productively.", trait: "Coach" },
+        { t: "Restate the shared goal so the disagreement has context.", trait: "Purpose_Builder" },
         { t: "Step back and ask what new approach neither side has considered yet.", trait: "Pathfinder" }
       ]
     },
     {
       text: "You're rolling out a change that will be unpopular. How do you approach it?",
       options: [
-        { t: "Explain the reasoning clearly, more than once, in more than one format.", trait: "Communicator" },
-        { t: "Help each person see what it means for their own growth.", trait: "Developer" },
-        { t: "Collect concerns before finalizing anything.", trait: "Listener" },
-        { t: "Acknowledge what people are giving up, not just what they're gaining.", trait: "Recognizer" },
+        { t: "Explain the reasoning clearly, more than once, in more than one format.", trait: "Purpose_Builder" },
+        { t: "Help each person see what it means for their own growth.", trait: "Coach" },
+        { t: "Collect concerns before finalizing anything.", trait: "Trust_Builder" },
+        { t: "Acknowledge what people are giving up, not just what they're gaining.", trait: "Champion" },
         { t: "Loop in people from other teams who've navigated this before.", trait: "Connector" },
         { t: "Paint a clear picture of where this change is taking the team, even if the path isn't fully certain yet.", trait: "Pathfinder" }
       ]
@@ -376,22 +376,22 @@
     {
       text: "A quiet member of your team has been carrying a heavy workload without complaint. What do you do?",
       options: [
-        { t: "Make sure their contribution doesn't go unnoticed by leadership.", trait: "Recognizer" },
+        { t: "Make sure their contribution doesn't go unnoticed by leadership.", trait: "Champion" },
         { t: "Pair them with someone who can share the load.", trait: "Connector" },
-        { t: "Ask what they want out of this project long-term.", trait: "Developer" },
-        { t: "Make their work visible to the rest of the team.", trait: "Communicator" },
-        { t: "Check in privately on how they're actually doing.", trait: "Listener" },
+        { t: "Ask what they want out of this project long-term.", trait: "Coach" },
+        { t: "Make their work visible to the rest of the team.", trait: "Purpose_Builder" },
+        { t: "Check in privately on how they're actually doing.", trait: "Trust_Builder" },
         { t: "Talk with them about what's next for the team and where they could fit into it.", trait: "Pathfinder" }
       ]
     },
     {
       text: "Someone on your team says they feel stuck in their role. How do you respond?",
       options: [
-        { t: "Map out a few paths they could grow into.", trait: "Developer" },
-        { t: "Ask what 'stuck' actually means to them before suggesting anything.", trait: "Listener" },
+        { t: "Map out a few paths they could grow into.", trait: "Coach" },
+        { t: "Ask what 'stuck' actually means to them before suggesting anything.", trait: "Trust_Builder" },
         { t: "Introduce them to someone doing work they're curious about.", trait: "Connector" },
-        { t: "Be direct about what opportunities genuinely exist right now.", trait: "Communicator" },
-        { t: "Reflect back the strengths that got them this far.", trait: "Recognizer" },
+        { t: "Be direct about what opportunities genuinely exist right now.", trait: "Purpose_Builder" },
+        { t: "Reflect back the strengths that got them this far.", trait: "Champion" },
         { t: "Talk through where things are headed and what new paths might open up.", trait: "Pathfinder" }
       ]
     },
@@ -399,42 +399,42 @@
       text: "You're leading a project with people from three different departments. What's your priority?",
       options: [
         { t: "Make sure the right people actually know each other.", trait: "Connector" },
-        { t: "Set a shared, plainly-stated goal everyone can repeat back.", trait: "Communicator" },
-        { t: "Call out each department's contribution as the project moves.", trait: "Recognizer" },
-        { t: "Look for who could take on more ownership.", trait: "Developer" },
-        { t: "Understand what success looks like from each department's side.", trait: "Listener" },
+        { t: "Set a shared, plainly-stated goal everyone can repeat back.", trait: "Purpose_Builder" },
+        { t: "Call out each department's contribution as the project moves.", trait: "Champion" },
+        { t: "Look for who could take on more ownership.", trait: "Coach" },
+        { t: "Understand what success looks like from each department's side.", trait: "Trust_Builder" },
         { t: "Set a vision for what this collaboration could unlock beyond this one project.", trait: "Pathfinder" }
       ]
     },
     {
       text: "Morale on your team has quietly dipped. Where do you start?",
       options: [
-        { t: "One-on-ones, just to hear what's going on.", trait: "Listener" },
-        { t: "Look at what's gone unacknowledged lately.", trait: "Recognizer" },
-        { t: "Be transparent with the team about what you're seeing and doing about it.", trait: "Communicator" },
+        { t: "One-on-ones, just to hear what's going on.", trait: "Trust_Builder" },
+        { t: "Look at what's gone unacknowledged lately.", trait: "Champion" },
+        { t: "Be transparent with the team about what you're seeing and doing about it.", trait: "Purpose_Builder" },
         { t: "Get the team spending more time together.", trait: "Connector" },
-        { t: "Ask whether people feel like they're actually growing.", trait: "Developer" },
+        { t: "Ask whether people feel like they're actually growing.", trait: "Coach" },
         { t: "Give the team a clear sense of what's ahead, so uncertainty isn't adding to the weight.", trait: "Pathfinder" }
       ]
     },
     {
       text: "You have five minutes to convince a skeptical exec to back your idea. What do you lead with?",
       options: [
-        { t: "A clear, simple statement of the problem and the ask.", trait: "Communicator" },
+        { t: "A clear, simple statement of the problem and the ask.", trait: "Purpose_Builder" },
         { t: "Who else already supports this, and why.", trait: "Connector" },
-        { t: "What this unlocks for the people who'd work on it.", trait: "Developer" },
-        { t: "What's already working that this builds on.", trait: "Recognizer" },
-        { t: "What you understand their concerns to be, up front.", trait: "Listener" },
+        { t: "What this unlocks for the people who'd work on it.", trait: "Coach" },
+        { t: "What's already working that this builds on.", trait: "Champion" },
+        { t: "What you understand their concerns to be, up front.", trait: "Trust_Builder" },
         { t: "What this idea sets up for down the road, not just today.", trait: "Pathfinder" }
       ]
     },
     {
       text: "A team member makes a mistake that causes delays. What's your first move?",
       options: [
-        { t: "Turn it into a lesson, not a verdict.", trait: "Developer" },
-        { t: "Get clear with them and the team about what happens next.", trait: "Communicator" },
-        { t: "Ask them to walk you through what happened, without judgment.", trait: "Listener" },
-        { t: "Note what they did right in how they handled it afterward.", trait: "Recognizer" },
+        { t: "Turn it into a lesson, not a verdict.", trait: "Coach" },
+        { t: "Get clear with them and the team about what happens next.", trait: "Purpose_Builder" },
+        { t: "Ask them to walk you through what happened, without judgment.", trait: "Trust_Builder" },
+        { t: "Note what they did right in how they handled it afterward.", trait: "Champion" },
         { t: "See if someone else has hit this before and can help.", trait: "Connector" },
         { t: "Use it to rethink the approach going forward, not just patch this instance.", trait: "Pathfinder" }
       ]
@@ -442,11 +442,11 @@
     {
       text: "It's the end of a hard quarter. What does your closing message to the team focus on?",
       options: [
-        { t: "Specific wins, and who drove them.", trait: "Recognizer" },
-        { t: "What this quarter taught the team, and what's next for people individually.", trait: "Developer" },
+        { t: "Specific wins, and who drove them.", trait: "Champion" },
+        { t: "What this quarter taught the team, and what's next for people individually.", trait: "Coach" },
         { t: "How the team pulled together across roles.", trait: "Connector" },
-        { t: "What people need most heading into next quarter.", trait: "Listener" },
-        { t: "A clear, honest picture of where things stand.", trait: "Communicator" },
+        { t: "What people need most heading into next quarter.", trait: "Trust_Builder" },
+        { t: "A clear, honest picture of where things stand.", trait: "Purpose_Builder" },
         { t: "Where the team is headed next, and why it's worth the push.", trait: "Pathfinder" }
       ]
     }
@@ -499,7 +499,7 @@
 
   function showResults() {
     document.getElementById('progressFill').style.width = '100%';
-    const counts = { Recognizer: 0, Listener: 0, Developer: 0, Connector: 0, Communicator: 0, Pathfinder: 0 };
+    const counts = { Champion: 0, Trust_Builder: 0, Coach: 0, Connector: 0, Purpose_Builder: 0, Pathfinder: 0 };
     answers.forEach(t => counts[t]++);
 
     const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
